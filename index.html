@@ -12,6 +12,10 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        .animated-counter, .animated-counter-unit {
+            display: inline-block;
+            min-width: 20px; /* Ensures space is reserved before animation */
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200 antialiased">
@@ -31,7 +35,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                         1. Estructura Empresarial – ZONA ZEC
                     </h2>
-                    <p class="mt-2 text-gray-400">Objetivo: Cumplir obligaciones ZEC, sostener la empresa y estar operativos 1 año. <br> <span class="font-semibold text-teal-500">Presupuesto Asignado: 60.000€</span></p>
+                    <p class="mt-2 text-gray-400">Objetivo: Cumplir obligaciones ZEC, sostener la empresa y estar operativos 1 año. <br> <span class="font-semibold text-teal-500">Presupuesto Asignado: <span class="animated-counter" data-target="60000">0</span>€</span></p>
                 </div>
                 <div class="p-4 md:p-6">
                     <div class="overflow-x-auto">
@@ -47,133 +51,133 @@
                             <tbody>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">SENA (ZEC)</td>
-                                    <td class="p-3 text-right">1.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="1455">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">12.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="17460">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Paola (ZEC)</td>
-                                    <td class="p-3 text-right">1.200€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="1746">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">14.400€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="20952">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Xina (ZEC)</td>
-                                    <td class="p-3 text-right">1.200€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="1746">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">14.400€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="20952">0</span>€</td>
                                 </tr>
                                  <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Nico (ZEC)</td>
-                                    <td class="p-3 text-right">500€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="728">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">6.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="8736">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Agustín</td>
-                                    <td class="p-3 text-right">600€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="600">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">7.200€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="7200">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Marwane</td>
-                                    <td class="p-3 text-right">2.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="2222">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">24.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="26664">0</span>€</td>
                                 </tr>
                                  <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Luciano</td>
-                                    <td class="p-3 text-right">2.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="2222">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">24.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="26664">0</span>€</td>
                                 </tr>
                                  <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Miki</td>
-                                    <td class="p-3 text-right">2.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="2222">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">24.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="26664">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Oficina</td>
-                                    <td class="p-3 text-right">1.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="1000">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">12.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="12000">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Parking Santa Cruz</td>
-                                    <td class="p-3 text-right">300€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="300">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">3.600€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="3600">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Gasolina</td>
-                                    <td class="p-3 text-right">50€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="50">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">600€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="600">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Cluster Audiovisual</td>
-                                    <td class="p-3 text-right">80€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="80">0</span>€</td>
                                     <td class="p-3 text-center">12 meses</td>
-                                    <td class="p-3 text-right font-medium">960€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="960">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Guion (MANTIS - Serie)</td>
-                                    <td class="p-3 text-right">10.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="10000">0</span>€</td>
                                     <td class="p-3 text-center">Pago único</td>
-                                    <td class="p-3 text-right font-medium">10.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="10000">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Guion (RAVE)</td>
-                                    <td class="p-3 text-right">7.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="7000">0</span>€</td>
                                     <td class="p-3 text-center">Pago único</td>
-                                    <td class="p-3 text-right font-medium">7.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="7000">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Web</td>
-                                    <td class="p-3 text-right">1.500€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="1500">0</span>€</td>
                                     <td class="p-3 text-center">Pago único</td>
-                                    <td class="p-3 text-right font-medium">1.500€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="1500">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Branding</td>
-                                    <td class="p-3 text-right">3.000€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="3000">0</span>€</td>
                                     <td class="p-3 text-center">Pago único</td>
-                                    <td class="p-3 text-right font-medium">3.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="3000">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Emails</td>
-                                    <td class="p-3 text-right">150€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="150">0</span>€</td>
                                     <td class="p-3 text-center">Anual</td>
-                                    <td class="p-3 text-right font-medium">150€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="150">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Internet</td>
-                                    <td class="p-3 text-right">500€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="500">0</span>€</td>
                                     <td class="p-3 text-center">Anual</td>
-                                    <td class="p-3 text-right font-medium">500€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="500">0</span>€</td>
                                 </tr>
                                  <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">ChatGPT</td>
-                                    <td class="p-3 text-right">250€</td>
+                                    <td class="p-3 text-right"><span class="animated-counter" data-target="250">0</span>€</td>
                                     <td class="p-3 text-center">Anual</td>
-                                    <td class="p-3 text-right font-medium">250€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="250">0</span>€</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Contingencia operativa</td>
                                     <td class="p-3 text-right">—</td>
                                     <td class="p-3 text-center">Anual</td>
-                                    <td class="p-3 text-right font-medium">5.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="5000">0</span>€</td>
                                 </tr>
                             </tbody>
                             <tfoot class="font-bold text-white">
                                 <tr class="border-t-2 border-teal-500">
                                     <td class="p-4" colspan="3">Total Estimado</td>
-                                    <td class="p-4 text-right text-lg">170.560€</td>
+                                    <td class="p-4 text-right text-lg"><span class="animated-counter" data-target="199852">0</span>€</td>
                                 </tr>
                                  <tr class="bg-gray-700/50">
                                     <td class="p-4" colspan="3">Resultado (Presupuesto 60.000€)</td>
-                                    <td class="p-4 text-right text-lg text-red-400">- 110.560€</td>
+                                    <td class="p-4 text-right text-lg text-red-400">- <span class="animated-counter" data-target="139852">0</span>€</td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -205,34 +209,34 @@
                             <tbody>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Aportación Directa Hello</td>
-                                    <td class="p-3 text-right font-medium">120.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="120000">0</span>€</td>
                                     <td class="p-3 hidden md:table-cell">Inversión de la propia sociedad</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Aportación sociedad Qantica</td>
-                                    <td class="p-3 text-right font-medium">35.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="35000">0</span>€</td>
                                     <td class="p-3 hidden md:table-cell">Socio externo</td>
                                 </tr>
                                 <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                     <td class="p-3 font-semibold">Aportaciones en Especie</td>
-                                    <td class="p-3 text-right font-medium">85.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="85000">0</span>€</td>
                                     <td class="p-3 hidden md:table-cell">Loc, cat, capitalización sueldos</td>
                                 </tr>
                                 <tr class="border-b-2 border-teal-500 font-bold hover:bg-gray-700/50">
                                     <td class="p-3">Base fiscal (mínima)</td>
-                                    <td class="p-3 text-right font-medium">240.000€</td>
+                                    <td class="p-3 text-right font-medium"><span class="animated-counter" data-target="240000">0</span>€</td>
                                     <td class="p-3 hidden md:table-cell">Suma de aportaciones para incentivo</td>
                                 </tr>
                             </tbody>
                             <tfoot class="font-bold text-white">
                                 <tr class="bg-blue-900/30">
                                     <td class="p-4">Incentivo fiscal esperado (40-50%)</td>
-                                    <td class="p-4 text-right text-lg text-blue-400">96.000€ – 120.000€</td>
+                                    <td class="p-4 text-right text-lg text-blue-400"><span class="animated-counter" data-target="96000">0</span>€ – <span class="animated-counter" data-target="120000">0</span>€</td>
                                     <td class="p-4 hidden md:table-cell"></td>
                                 </tr>
                                  <tr class="bg-gray-700">
                                     <td class="p-4 text-lg">Presupuesto Total Estimado</td>
-                                    <td class="p-4 text-right text-2xl text-teal-400">~380.000€</td>
+                                    <td class="p-4 text-right text-2xl text-teal-400">~<span class="animated-counter" data-target="380000">0</span>€</td>
                                     <td class="p-4 hidden md:table-cell"></td>
                                 </tr>
                             </tfoot>
@@ -256,62 +260,7 @@
                     <!-- Obligación ZEC -->
                     <div>
                         <h3 class="text-lg font-semibold text-white mb-2">Obligación ZEC a Cumplir</h3>
-                        <p class="text-gray-300">La normativa ZEC exige mantener un mínimo de <span class="font-bold text-teal-400">5 empleados</span> contratados (o equivalente) que sumen un total de <span class="font-bold text-teal-400">15.000 horas anuales</span>. Solo el personal con alta en la Seguridad Social (en nómina) computa para este cálculo.</p>
-                    </div>
-
-                    <!-- Tipos de Contratados -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-white mb-3">¿Qué personal del rodaje computa para horas ZEC?</h3>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-left">
-                                <thead class="bg-gray-700 text-sm uppercase text-gray-300">
-                                    <tr>
-                                        <th class="p-3">Tipo de Profesional</th>
-                                        <th class="p-3 text-center">Contratado (Alta SS)</th>
-                                        <th class="p-3 text-center">¿Computa Horas ZEC?</th>
-                                        <th class="p-3 hidden md:table-cell">Comentario Clave</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b border-gray-700 hover:bg-gray-700/50">
-                                        <td class="p-3 font-semibold">Actores principales</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 hidden md:table-cell">Por convenio, deben estar contratados.</td>
-                                    </tr>
-                                    <tr class="border-b border-gray-700 hover:bg-gray-700/50">
-                                        <td class="p-3 font-semibold">Director/a</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 hidden md:table-cell">Contrato por obra y servicio, si es asalariado.</td>
-                                    </tr>
-                                    <tr class="border-b border-gray-700 hover:bg-gray-700/50">
-                                        <td class="p-3 font-semibold">Jefes de Equipo (Producción, Foto, etc.)</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 hidden md:table-cell">Computan si tienen nómina en la empresa ZEC.</td>
-                                    </tr>
-                                     <tr class="border-b border-gray-700 hover:bg-gray-700/50">
-                                        <td class="p-3 font-semibold">Asistentes y Auxiliares</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 text-center text-green-400">✅ Sí</td>
-                                        <td class="p-3 hidden md:table-cell">Suman un volumen de horas considerable.</td>
-                                    </tr>
-                                    <tr class="border-b border-gray-700 hover:bg-gray-700/50">
-                                        <td class="p-3 font-semibold">Freelance (factura)</td>
-                                        <td class="p-3 text-center text-red-400">❌ No</td>
-                                        <td class="p-3 text-center text-red-400">❌ No</td>
-                                        <td class="p-3 hidden md:table-cell">No están en nómina de la empresa.</td>
-                                    </tr>
-                                    <tr class="hover:bg-gray-700/50">
-                                        <td class="p-3 font-semibold">Socios autónomos no contratados</td>
-                                        <td class="p-3 text-center text-red-400">❌ No</td>
-                                        <td class="p-3 text-center text-red-400">❌ No</td>
-                                        <td class="p-3 hidden md:table-cell">Su actividad no cuenta como horas de empleado.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <p class="text-gray-300">La normativa ZEC exige mantener un mínimo de <span class="font-bold text-teal-400"><span class="animated-counter-unit" data-target="5">0</span> empleados</span> contratados (o equivalente) que sumen un total de <span class="font-bold text-teal-400"><span class="animated-counter-unit" data-target="15000">0</span> horas anuales</span>. Solo el personal con alta en la Seguridad Social (en nómina) computa para este cálculo.</p>
                     </div>
                     
                     <!-- Ejemplo de Cómputo -->
@@ -331,37 +280,37 @@
                                 <tbody>
                                     <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                         <td class="p-3 font-semibold">Actores</td>
-                                        <td class="p-3 text-center">6</td>
-                                        <td class="p-3 text-center">8 h</td>
-                                        <td class="p-3 text-center">15</td>
-                                        <td class="p-3 text-right text-teal-400 font-medium">720 h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="6">0</span></td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="8">0</span> h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="15">0</span></td>
+                                        <td class="p-3 text-right text-teal-400 font-medium"><span class="animated-counter-unit" data-target="720" data-unit="h">0</span></td>
                                     </tr>
                                     <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                         <td class="p-3 font-semibold">Jefes de equipo</td>
-                                        <td class="p-3 text-center">5</td>
-                                        <td class="p-3 text-center">10 h</td>
-                                        <td class="p-3 text-center">15</td>
-                                        <td class="p-3 text-right text-teal-400 font-medium">750 h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="5">0</span></td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="10">0</span> h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="15">0</span></td>
+                                        <td class="p-3 text-right text-teal-400 font-medium"><span class="animated-counter-unit" data-target="750" data-unit="h">0</span></td>
                                     </tr>
                                     <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                         <td class="p-3 font-semibold">Producción / Asistencia</td>
-                                        <td class="p-3 text-center">4</td>
-                                        <td class="p-3 text-center">10 h</td>
-                                        <td class="p-3 text-center">15</td>
-                                        <td class="p-3 text-right text-teal-400 font-medium">600 h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="4">0</span></td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="10">0</span> h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="15">0</span></td>
+                                        <td class="p-3 text-right text-teal-400 font-medium"><span class="animated-counter-unit" data-target="600" data-unit="h">0</span></td>
                                     </tr>
                                     <tr class="border-b border-gray-700 hover:bg-gray-700/50">
                                         <td class="p-3 font-semibold">Auxiliares</td>
-                                        <td class="p-3 text-center">4</td>
-                                        <td class="p-3 text-center">8 h</td>
-                                        <td class="p-3 text-center">15</td>
-                                        <td class="p-3 text-right text-teal-400 font-medium">480 h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="4">0</span></td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="8">0</span> h</td>
+                                        <td class="p-3 text-center"><span class="animated-counter-unit" data-target="15">0</span></td>
+                                        <td class="p-3 text-right text-teal-400 font-medium"><span class="animated-counter-unit" data-target="480" data-unit="h">0</span></td>
                                     </tr>
                                 </tbody>
                                 <tfoot class="font-bold text-white">
                                     <tr class="border-t-2 border-teal-500">
                                         <td class="p-4" colspan="4">Total Horas ZEC computables (15 días de rodaje)</td>
-                                        <td class="p-4 text-right text-xl">2.550 h</td>
+                                        <td class="p-4 text-right text-xl"><span class="animated-counter-unit" data-target="2550" data-unit="h">0</span></td>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -371,12 +320,82 @@
                     <!-- Conclusión -->
                     <div class="bg-teal-900/40 border-l-4 border-teal-500 p-4 rounded-r-lg">
                         <h3 class="text-xl font-bold text-white mb-2">Conclusión y Estrategia</h3>
-                        <p class="text-gray-300">Esta estrategia permite cumplir con más del <strong class="text-white">17% del requisito anual de horas ZEC</strong> (2.550 de 15.000) con solo 3 semanas de producción intensiva. Demuestra un uso eficiente y legal de los recursos, ya que aprovecha personal contratado para una actividad económica real (el rodaje) para satisfacer las obligaciones de la ZEC. Esto evita la necesidad de inflar artificialmente la plantilla fija de la empresa, optimizando los 60.000€ del presupuesto operativo y garantizando el cumplimiento normativo.</p>
+                        <p class="text-gray-300">Esta estrategia permite cumplir con más del <strong class="text-white"><span class="animated-counter-unit" data-target="17">0</span>% del requisito anual de horas ZEC</strong> (<span class="animated-counter-unit" data-target="2550">0</span> de <span class="animated-counter-unit" data-target="15000">0</span>) con solo 3 semanas de producción intensiva. Demuestra un uso eficiente y legal de los recursos, ya que aprovecha personal contratado para una actividad económica real (el rodaje) para satisfacer las obligaciones de la ZEC. Esto evita la necesidad de inflar artificialmente la plantilla fija de la empresa, optimizando los <strong class="text-white"><span class="animated-counter" data-target="60000">0</span>€</strong> del presupuesto operativo y garantizando el cumplimiento normativo.</p>
                     </div>
 
                 </div>
             </div>
         </section>
+    </div>
+
+    <script>
+        // --- ANIMATED COUNTER SCRIPT ---
+
+        // Function for animating currency values (€)
+        const animateCounterCurrency = (el) => {
+            const target = parseInt(el.getAttribute('data-target'), 10);
+            const duration = 1500; // 1.5 seconds
+            const frameDuration = 1000 / 60; // 60 frames per second
+            const totalFrames = Math.round(duration / frameDuration);
+            let frame = 0;
+
+            const counter = setInterval(() => {
+                frame++;
+                const progress = frame / totalFrames;
+                const current = Math.round(target * progress);
+
+                el.innerText = current.toLocaleString('es-ES');
+
+                if (frame === totalFrames) {
+                    clearInterval(counter);
+                    el.innerText = target.toLocaleString('es-ES'); // Ensure final value is exact
+                }
+            }, frameDuration);
+        };
+
+        // Function for animating other units (like hours, percentages, etc.)
+        const animateCounterUnit = (el) => {
+            const target = parseInt(el.getAttribute('data-target'), 10);
+            const unit = el.getAttribute('data-unit') || ''; // Get unit from data-unit attribute (e.g., "h" or "%")
+            const duration = 1500;
+            const frameDuration = 1000 / 60;
+            const totalFrames = Math.round(duration / frameDuration);
+            let frame = 0;
+
+            const counter = setInterval(() => {
+                frame++;
+                const progress = frame / totalFrames;
+                const current = Math.round(target * progress);
+                el.innerText = current.toLocaleString('es-ES') + (unit ? ' ' + unit : '');
+
+                if (frame === totalFrames) {
+                    clearInterval(counter);
+                    el.innerText = target.toLocaleString('es-ES') + (unit ? ' ' + unit : ''); // Ensure final value is exact
+                }
+            }, frameDuration);
+        };
+
+        // Intersection Observer to trigger animations when elements are visible
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('animated-counter')) {
+                        animateCounterCurrency(entry.target);
+                    } else if (entry.target.classList.contains('animated-counter-unit')) {
+                        animateCounterUnit(entry.target);
+                    }
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, { threshold: 0.2 }); // Trigger when 20% of the element is visible
+
+        // Attach observer to all elements with the specified classes
+        document.querySelectorAll('.animated-counter, .animated-counter-unit').forEach(counter => {
+            observer.observe(counter);
+        });
+    </script>
+</body>
+</html>
 
     </div>
 
